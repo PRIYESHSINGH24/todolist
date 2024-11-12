@@ -1,0 +1,113 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* Header styling */
+  h1 {
+    font-size: 2.5rem;
+    color: #495057;
+    margin-bottom: 25px;
+  }
+  
+  /* Todo container styling */
+  #todos {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px; /* Space between add section and todo list */
+  }
+  
+  /* Styling each todo item */
+  #todos > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  /* Adding a subtle hover effect */
+  #todos > div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Todo text styling */
+  #todos h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #495057;
+  }
+  
+  /* Delete button styling */
+  #todos button {
+    background-color: #f03e3e;
+    color: #fff;
+    border: none;
+    border-radius: 80px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #todos button:hover {
+    background-color: #c92a2a;
+  }
+  
+  /* Add todo input and button styling */
+  div input[type="text"],
+  div button {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 80px;
+    border: 1px solid #adb5bd;
+    outline: none;
+    margin-bottom: 10px;
+  }
+  
+  div input[type="text"] {
+    flex-grow: 1;
+    max-width: 320px;
+    margin-right: 10px;
+    background-color: #ffffff;
+  }
+  
+  div button {
+    background-color: #339af0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  div button:hover {
+    background-color: #1c7ed6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    #todos {
+      width: 90%;
+    }
+    
+    div input[type="text"] {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
