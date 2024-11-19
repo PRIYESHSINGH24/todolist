@@ -1,0 +1,17 @@
+<body>
+    <input type="text"></input>
+    <button onclick="addtodo()">Add Todo</button>
+</body>
+<script>
+    function addtodo() {
+        // alert("Hi there");   this is to check wheather the code on clicked is working or not
+        const val = document.querySelector("input").value;
+        const newtodoel = document.createElement("div");
+        newtodoel.innerHTML = "<div>"+val +"</div><button> delete </button>";
+        document.querySelector("body").appendChild(newtodoel);
+    }
+</script>
+
+
+
+
